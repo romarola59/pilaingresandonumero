@@ -1,12 +1,28 @@
 ﻿using System;
+using System.Collections;
 
 namespace numerosenterosconpila
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            int numero, suma = 0;
+            Stack miPila = new Stack();
+            miPila.Push(10);
+            miPila.Push(11);
+            miPila.Push(12);
+            miPila.Push(13);
+            for (int m = 0; m <= 3; m++)
+            {
+
+                numero = (int)miPila.Pop();
+                suma = suma + numero;
+            }
+            Console.WriteLine(suma);
+        
+            Console.ReadKey();
         }
+        
     }
 }
